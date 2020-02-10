@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
 
 import Attractions from './Attractions/Attractions';
 import Hotels from './Hotels/Hotels';
@@ -11,33 +12,40 @@ import Tickets from './Tickets/Tickets';
 export default function BasicExample() {
   return (
     <Router>
-      <div className='nav'>
+      
+      <Navbar bg="light" variant="light">
+      <Nav className="mr-auto">
 
         <ul>
           
           <li>
-            <Link to="/">Park</Link>
+            <Navbar.Brand href="/">Park</Navbar.Brand>
           </li>
 
           <li>
-            <Link to="/attractions">Attractions</Link>
+            <Nav.Link href="/attractions">Attractions</Nav.Link>
           </li>
           
+        </ul>
+      </Nav>
+      <Nav>
+        <ul>
+          
           <li className='navRight'>
-            <Link to="/tickets">Tickets</Link>
+            <Nav.Link href="/tickets">Tickets</Nav.Link>
           </li>
 
           <li className='navRight'>
-            <Link to="/shop">Shop</Link>
+            <Nav.Link href="/shop">Shop</Nav.Link>
           </li>
 
           <li className='navRight'>
-            <Link to="/hotels">Hotels</Link>
+            <Nav.Link href="/hotels">Hotels</Nav.Link>
           </li>
         
         </ul>
-      
-      
+      </Nav>
+      </Navbar>
 
         <Switch>
           
@@ -62,7 +70,8 @@ export default function BasicExample() {
           </Route>
         
         </Switch>
-      </div>
+      
+      
     </Router>
   );
 }
