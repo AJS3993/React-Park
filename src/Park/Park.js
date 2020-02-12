@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import MainPic from '../Components/MainPic/MainPic'
+import MainPic from '../Components/MainPic/MainPic';
+import Section from '../Components/Card/Card';
 import './Park.css';
 
 
@@ -7,8 +8,8 @@ class Park extends Component{
     render(){
         return(
             <div>
-                <h1>Park</h1>
                 <MainPic/>
+                <Section/>
             </div>
         )
     }

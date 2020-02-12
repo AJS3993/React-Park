@@ -9,7 +9,7 @@ import Park from './Park/Park';
 import Shop from './Shop/Shop';
 import Tickets from './Tickets/Tickets';
 
-export default function BasicExample() {
+export default function NavBar() {
   return (
     <Router>
       
