@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import MainPic from '../Components/MainPic/MainPic'
 import './Park.css';
 
 
@@ -7,6 +8,7 @@ class Park extends Component{
         return(
             <div>
                 <h1>Park</h1>
+                <MainPic/>
             </div>
         )
     }
