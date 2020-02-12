@@ -3,11 +3,12 @@ import './App.css';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import { Navbar, Nav } from 'react-bootstrap';
 
-import Attractions from './Attractions/Attractions';
-import Hotels from './Hotels/Hotels';
-import Park from './Park/Park';
-import Shop from './Shop/Shop';
-import Tickets from './Tickets/Tickets';
+import Attractions from './Pages/Attractions/Attractions';
+import Hotels from './Pages/Hotels/Hotels';
+import Park from './Pages/Park/Park';
+import Shop from './Pages/Shop/Shop';
+import Tickets from './Pages/Tickets/Tickets';
+import Login from './Pages/Login/Login';
 
 export default function NavBar() {
   return (
@@ -42,6 +43,10 @@ export default function NavBar() {
           <li className='navRight'>
             <Nav.Link href="/hotels">Hotels</Nav.Link>
           </li>
+
+          <li className='navRight'>
+            <Nav.Link href="/login">Log In</Nav.Link>
+          </li>
         
         </ul>
       </Nav>
@@ -67,6 +72,10 @@ export default function NavBar() {
 
           <Route path="/hotels">
             <Hotels />
+          </Route>
+
+          <Route path="/login">
+            <Login />
           </Route>
         
         </Switch>

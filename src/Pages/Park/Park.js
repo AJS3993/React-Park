@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import MainPic from '../Components/MainPic/MainPic';
-import Section from '../Components/Card/Card';
+import MainPic from '../../Components/MainPic/MainPic';
+import Section from '../../Components/Card/Card';
 import './Park.css';
 
 
