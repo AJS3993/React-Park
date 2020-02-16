@@ -15,12 +15,17 @@ export default function NavBar() {
     <Router>
       
       <Navbar bg="light" variant="light">
-      <Nav className="mr-auto">
+      <Nav className='mr-auto'>
 
         <ul>
           
           <li>
-            <Navbar.Brand href="/">Park</Navbar.Brand>
+            <Navbar.Brand href="/">
+              {/* <img alt=''
+            className="d-inline-block align-top" 
+            src='https://i.pinimg.com/originals/79/21/c5/7921c54b4232a2e2da8ad8f3f878c4ec.png'/> */}
+            Park
+            </Navbar.Brand>
           </li>
 
           <li>
@@ -44,9 +49,11 @@ export default function NavBar() {
             <Nav.Link href="/hotels">Hotels</Nav.Link>
           </li>
 
-          <li className='navRight'>
+   
+          <li className='navRightLogin'>
             <Nav.Link href="/login">Log In</Nav.Link>
           </li>
+
         
         </ul>
       </Nav>

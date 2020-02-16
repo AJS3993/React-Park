@@ -11,3 +11,7 @@ li{
   display: flex;
   float: left;
 }
+
+.navRightLogin{
+  border: 1px solid rgb(223, 222, 222);
+}
