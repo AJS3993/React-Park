@@ -5,10 +5,10 @@ function NavCard(props){
 
     return(
         <Card>
-           <Card.Img variant="top" src='https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/6v/gb/p06vgbzj.jpg'/>           
+           <Card.Img variant="top" src={props.img}/>           
            <Card.Title>{props.title}</Card.Title>
-           <Card.Text>Text</Card.Text>
-           <Button variant="primary">Go somewhere</Button>
+           <Card.Text>{props.text}</Card.Text>
+           <Button variant="primary">{props.button}</Button>
         </Card>
         )
     }
