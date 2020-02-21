@@ -1,15 +1,16 @@
-import React, {Component} from 'react';
-import { Card } from 'react-bootstrap';
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
 
-class Section extends Component{
-render(){
+function NavCard(props){
+
     return(
         <Card>
-           <Card.Title>Title</Card.Title>
-           <Card.Text>text</Card.Text>
+           <Card.Img variant="top" src='https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/6v/gb/p06vgbzj.jpg'/>           
+           <Card.Title>{props.title}</Card.Title>
+           <Card.Text>Text</Card.Text>
+           <Button variant="primary">Go somewhere</Button>
         </Card>
         )
     }
-}
 
-export default Section;
+export default NavCard;
