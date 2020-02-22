@@ -5,7 +5,7 @@ class App extends Component {
     render(){
         return(
             <div style={{
-                backgroundColor: 'rgb(245,255,245)'}}>
+                backgroundImage: 'url(https://www.lefthudson.com/wp-content/uploads/2019/11/jurassic-world-backgrounds-unique-jurassic-park-background-premier-live-casino-2019-of-jurassic-world-backgrounds.jpg)'}}>
                 <Navbar/>
             </div>
         )

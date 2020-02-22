@@ -1,14 +1,15 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 function NavCard(props){
 
     return(
-        <Card bg="secondary" text="white">
-           <Card.Img variant="top" src={props.img}/>           
-           <Card.Header>{props.title}</Card.Header>
+        <Card bg="secondary" text="white" border="light">
+           <Card.Img variant="top" src={props.img}/> 
+           <Card.ImgOverlay>         
+           <Card.Title>{props.title}</Card.Title>
            <Card.Text>{props.text}</Card.Text>
-           <Button variant="primary">{props.button}</Button>
+           </Card.ImgOverlay> 
         </Card>
         )
     }

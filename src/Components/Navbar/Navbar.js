@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <Router>
       
-      <Navbar bg="light" variant="light">
+      <Navbar variant="dark">
       <Nav className='mr-auto'>
 
         <ul>
