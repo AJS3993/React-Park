@@ -3,8 +3,12 @@ import { Card } from 'react-bootstrap';
 
 function NavCard(props){
 
+    function sayHello() {
+        alert('Hello!');
+      }
+    
     return(
-        <Card bg="secondary" text="white" border="light">
+        <Card bg="secondary" text="white" border="light" onClick={sayHello}>
            <Card.Img variant="top" src={props.img}/> 
            <Card.ImgOverlay>         
            <Card.Title>{props.title}</Card.Title>
