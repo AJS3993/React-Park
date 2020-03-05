@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 function NavCard(props){
 
     function sayHello() {
-        alert('Hello!');
+        alert('hi');
       }
     
     return(
